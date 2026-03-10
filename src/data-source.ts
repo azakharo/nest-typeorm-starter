@@ -1,5 +1,4 @@
 import { DataSource, DataSourceOptions } from 'typeorm';
-import { PostEntity } from './entities/post.entity';
 
 const isTsNode = !!process[Symbol.for('ts-node.register.instance')];
 
@@ -10,7 +9,7 @@ export const dataSourceOptions: DataSourceOptions = {
   username: process.env.DB_USERNAME || 'user',
   password: process.env.DB_PASSWORD || 'password',
   database: process.env.DB_DATABASE || 'backend_starter_db',
-  entities: [PostEntity],
+  entities: [],
   migrations: isTsNode
     ? ['src/migrations/**/*.ts']
     : ['dist/migrations/**/*.js'],

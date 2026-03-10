@@ -1,7 +1,6 @@
 import { DataSource } from 'typeorm';
 import { dataSourceOptions } from '../data-source';
 
-
 /**
  * Seed script to populate database with initial data
  */
@@ -13,7 +12,6 @@ async function runSeed() {
     console.log('🌱 Starting seed...');
 
     console.log('NOT IMPLEMENTED!!!!!!!!!!!!!!!!!!!!!');
-
   } catch (error) {
     console.error('❌ Seed failed:', error);
     throw error;
